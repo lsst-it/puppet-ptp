@@ -2,9 +2,9 @@
 ptp::packages:
    - linuxptp
 ptp::disabled_services:
-   - chronyd
-   - ntpd
+   chronyd:
+   ntpd:
 ptp::enabled_services:
-   - ptp4l
-   - phc2sys
+   ptp4l:
+   phc2sys:
 
