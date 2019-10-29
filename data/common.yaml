@@ -1,10 +1,17 @@
 ---
 ptp::packages:
    - linuxptp
-ptp::disabled_services:
+ptp::services:
    chronyd:
+      ensure: stopped
+      enable: false
    ntpd:
-ptp::enabled_services:
+      ensure: stopped
+      enable: false
    ptp4l:
+      ensure: running
+      enable: true
    phc2sys:
+      ensure: running
+      enable: true
 
