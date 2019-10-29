@@ -13,8 +13,8 @@ class ptp (
 
   ensure_packages( $packages, { 'ensure' => 'present'} )
 
-  ensure_resources('service', $disabled_services, { 'ensure' => 'stopped', 'enable' => false })
+  ensure_resources('service', $disabled_services, { 'ensure' => 'stopped', 'enable' => 'false', })
 
-  ensure_resources('service', $enabled_services, { 'ensure' => 'running', 'enable' => true })
+  ensure_resources('service', $enabled_services, { 'ensure' => 'running', 'enable' => 'true', })
 
 }
