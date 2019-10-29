@@ -1,1 +1,10 @@
 ---
+ptp::packages:
+   - linuxptp
+ptp::disabled_services:
+   - chronyd
+   - ntpd
+ptp::enabled_services:
+   - ptp4l
+   - phc2sys
+
